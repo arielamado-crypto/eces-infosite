@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>School Data | Estancia Central Elementary School</title>
+<meta name="description" content="Enrollment, personnel, performance indicators and reading profile of Estancia Central Elementary School, presented in graphs.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="data">
+<div id="site-header"></div>
+<main>
+  <section class="page-hero"><div class="wrap">
+    <div class="crumbs"><a href="index.html">Home</a> / School Data</div>
+    <span class="eyebrow">Transparency Board</span>
+    <h1>School Data &amp; Statistics</h1>
+    <p>Key facts and figures of ECES for School Year <span data-d="schoolYear"></span>, presented for learners, parents and stakeholders.</p>
+  </div></section>
+
+  <section class="section" style="padding-top:48px"><div class="wrap">
+    <p class="note" id="sample-note" style="margin-bottom:24px"><b>Sample data:</b> the figures on this page are placeholders and will be replaced with the school's official records.</p>
+    <div class="data-meta"><span>📅 SY <b data-d="schoolYear"></b></span><span>🕒 As of <b data-d="asOf"></b></span><span>📁 Source: <b data-d="source"></b></span></div>
+    <div class="kpis" id="kpis"></div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Learners</span><h2>Enrollment</h2><p>Number of learners per grade level, by sex.</p></div>
+    <div class="chart-grid">
+      <div class="chart-card wide reveal"><h3>Enrollment by Grade Level</h3><div class="chart-box tall"><canvas id="c-enroll" aria-label="Bar chart of enrollment by grade level and sex"></canvas></div></div>
+      <div class="chart-card reveal"><h3>Learners by Sex</h3><div class="chart-box tall"><canvas id="c-sex" aria-label="Doughnut chart of learners by sex"></canvas></div></div>
+    </div>
+    <div class="chart-grid" style="margin-top:22px">
+      <div class="chart-card wide reveal"><h3>Enrollment Trend</h3><p class="sub">Total enrollment over the last school years</p><div class="chart-box"><canvas id="c-trend" aria-label="Line chart of enrollment over the years"></canvas></div></div>
+      <div class="chart-card reveal table-card"><h3>Enrollment Table</h3><div class="table-wrap"><table class="dtable" id="enroll-table"></table></div></div>
+    </div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Learning Outcomes</span><h2>Performance &amp; Reading</h2><p>Key performance indicators and the reading profile of our learners.</p></div>
+    <div class="chart-grid">
+      <div class="chart-card wide reveal"><h3>Key Performance Indicators</h3><p class="sub">In percent (%)</p><div class="perf-list" id="perf"></div></div>
+      <div class="chart-card reveal"><h3 id="reading-title">Reading Profile</h3><div class="chart-box tall"><canvas id="c-reading" aria-label="Doughnut chart of reading levels"></canvas></div></div>
+    </div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Our People</span><h2>Teaching Personnel</h2><p>Number of teaching personnel by position.</p></div>
+    <div class="chart-card reveal"><div class="chart-box"><canvas id="c-teachers" aria-label="Bar chart of teaching personnel by position"></canvas></div></div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/school-data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="assets/js/data-page.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

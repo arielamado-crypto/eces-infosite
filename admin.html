@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Site Editor | Estancia Central Elementary School</title>
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="editor">
+
+<header class="ed-head">
+  <div class="wrap">
+    <div class="brand"><img src="assets/img/eces-logo.png" alt=""><span><b>ECES Site Editor</b><small>Update the website without touching code</small></span></div>
+    <a class="btn ghost sm" href="index.html" target="_blank" rel="noopener">View website ↗</a>
+  </div>
+</header>
+
+<div class="ed-bar"><div class="wrap">
+  <span class="ed-status ok" id="status">Loading…</span>
+  <div class="ed-actions">
+    <a class="btn sm green" href="#save" id="jump-save">Save changes ↓</a>
+  </div>
+</div></div>
+
+<main class="wrap ed-main">
+  <nav class="ed-tabs" aria-label="Editor sections">
+    <button class="ed-tab on" data-tab="t-info">🏫 School Info</button>
+    <button class="ed-tab" data-tab="t-news">📢 Announcements</button>
+    <button class="ed-tab" data-tab="t-general">📋 Data Settings</button>
+    <button class="ed-tab" data-tab="t-enroll">👧 Enrollment</button>
+    <button class="ed-tab" data-tab="t-trend">📈 Enrollment Trend</button>
+    <button class="ed-tab" data-tab="t-teach">👩‍🏫 Teachers</button>
+    <button class="ed-tab" data-tab="t-perf">🎯 Performance</button>
+    <button class="ed-tab" data-tab="t-read">📖 Reading Profile</button>
+  </nav>
+
+  <div class="ed-panels">
+    <section class="ed-panel card" id="t-info">
+      <h2>School Info</h2><p class="ed-help">Name, principal, contact details and links shown across the website.</p>
+      <div id="p-info"></div>
+    </section>
+    <section class="ed-panel card" id="t-news" hidden>
+      <h2>Announcements</h2><p class="ed-help">Newest items appear first. Click <b>+ Add row</b> for a new announcement; the home page shows the latest 4.</p>
+      <div id="p-news"></div>
+    </section>
+    <section class="ed-panel card" id="t-general" hidden>
+      <h2>Data Settings</h2><p class="ed-help">School year and source shown on the School Data page.</p>
+      <div id="p-general"></div>
+    </section>
+    <section class="ed-panel card" id="t-enroll" hidden>
+      <h2>Enrollment by Grade Level</h2><p class="ed-help">Enter the number of male and female learners. Totals are computed automatically.</p>
+      <div id="p-enroll"></div>
+    </section>
+    <section class="ed-panel card" id="t-trend" hidden>
+      <h2>Enrollment Trend</h2><p class="ed-help">Total enrollment per school year, oldest first. This draws the line graph.</p>
+      <div id="p-trend"></div>
+    </section>
+    <section class="ed-panel card" id="t-teach" hidden>
+      <h2>Teaching Personnel</h2><p class="ed-help">Number of personnel per position. Rows with "Principal" in the name are not counted in the learner–teacher ratio.</p>
+      <div id="p-teach"></div>
+    </section>
+    <section class="ed-panel card" id="t-perf" hidden>
+      <h2>Performance Indicators</h2><p class="ed-help">Values in percent. Tick "Lower is better" for rates like dropout, so they show in red.</p>
+      <div id="p-perf"></div>
+    </section>
+    <section class="ed-panel card" id="t-read" hidden>
+      <h2>Reading Profile</h2><p class="ed-help">Number of learners per reading level (e.g., Phil-IRI results).</p>
+      <div id="p-read-title"></div><div id="p-read"></div>
+    </section>
+
+    <!-- SAVE -->
+    <section class="card ed-save" id="save">
+      <h2>Save your changes</h2>
+      <div class="ed-save-grid">
+        <div class="ed-save-opt">
+          <span class="pill">Easiest</span>
+          <h3>Save straight to GitHub</h3>
+          <p class="ed-help">Changes go live in 1–2 minutes. Needs a GitHub token (see steps below).</p>
+          <div class="ed-grid two">
+            <label class="ed-field"><span>GitHub username</span><input id="gh-owner" placeholder="arielamado-crypto"></label>
+            <label class="ed-field"><span>Repository name</span><input id="gh-repo" placeholder="eces-infosite"></label>
+            <label class="ed-field"><span>Branch</span><input id="gh-branch" value="main"></label>
+            <label class="ed-field"><span>GitHub token</span><input id="gh-token" type="password" autocomplete="off" placeholder="github_pat_…"><small>Not saved anywhere — you paste it each time.</small></label>
+          </div>
+          <button class="btn green" id="btn-gh" type="button">Save to GitHub</button>
+          <p class="ed-msg" id="gh-msg"></p>
+          <details class="ed-details"><summary>How to get a GitHub token (one time)</summary>
+            <ol>
+              <li>On GitHub, click your photo → <b>Settings</b> → <b>Developer settings</b> → <b>Personal access tokens</b> → <b>Fine-grained tokens</b> → <b>Generate new token</b>.</li>
+              <li>Name it "ECES Site Editor" and pick an expiration date.</li>
+              <li>Repository access: <b>Only select repositories</b> → choose <b>eces-infosite</b>.</li>
+              <li>Permissions → Repository permissions → <b>Contents: Read and write</b>.</li>
+              <li>Click <b>Generate token</b> and copy it. Keep it private, like a password.</li>
+            </ol>
+          </details>
+        </div>
+        <div class="ed-save-opt">
+          <span class="pill">No token needed</span>
+          <h3>Download the files</h3>
+          <p class="ed-help">Downloads <b>config.js</b> and <b>school-data.js</b>, which you then upload to GitHub.</p>
+          <button class="btn" id="btn-download" type="button">Download updated files</button>
+          <div class="note" id="dl-help" hidden style="margin-top:16px">
+            On GitHub open your repository → <b>assets</b> → <b>js</b> → <b>Add file</b> → <b>Upload files</b> → drag in both downloaded files → <b>Commit changes</b>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="assets/js/editor.js"></script>
+</body>
+</html>
