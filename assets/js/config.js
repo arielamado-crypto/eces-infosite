@@ -1,5 +1,5 @@
 /* ECES INFOSITE — SITE SETTINGS
-   Edited with the Site Editor (admin.html) on Oct 29, 2026, 3:30 PM.
+   Edited with the Site Editor (admin.html) on Oct 29, 2026, 3:38 PM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES = {
   "schoolName": "Estancia Central Elementary School",
@@ -8,7 +8,7 @@ window.ECES = {
   "division": "Schools Division of Iloilo",
   "district": "District of Estancia",
   "address": "Estancia, Iloilo, Philippines 5017",
-  "principalName": "ZENAFE C. CATON, EdE",
+  "principalName": "ZENAFE C. CATON, EdD",
   "principalTitle": "School Principal",
   "phone": "(033) 000-0000",
   "email": "116349@deped.gov.ph",
