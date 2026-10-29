@@ -87,8 +87,11 @@ h1,h2,h3{font-family:var(--serif);line-height:1.15;color:var(--green-900);font-w
 .hero p.lead{font-size:1.15rem;color:#d4e8dc;max-width:560px}
 .hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
 .hero-card{position:relative;justify-self:center;width:min(380px,100%)}
-.hero-card .seal{width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fffbe6 0%,#fff2b3 55%,rgba(244,194,13,.0) 72%);display:grid;place-items:center}
-.hero-card .seal img{width:78%;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35));animation:float 6s ease-in-out infinite}
+.hero-photo{position:relative;width:100%;aspect-ratio:1;border-radius:50%;padding:8px;background:conic-gradient(var(--gold),#fff6c9,var(--gold-deep),var(--gold));box-shadow:0 30px 60px -18px rgba(0,0,0,.6),0 0 0 14px rgba(244,194,13,.12);animation:float 6s ease-in-out infinite}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%;border-radius:50%;border:5px solid var(--green-900)}
+.hero-name{position:relative;margin:-26px auto 0;width:max-content;max-width:100%;text-align:center;background:var(--green-950);border:2px solid var(--gold);border-radius:16px;padding:10px 22px;box-shadow:0 12px 26px -10px rgba(0,0,0,.6);z-index:2}
+.hero-name b{display:block;font-family:var(--serif);font-size:1.15rem;color:#fff;line-height:1.25}
+.hero-name span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
 @keyframes float{50%{transform:translateY(-10px)}}
 .wave{position:absolute;bottom:-1px;left:0;width:100%;height:70px;z-index:1}
 
