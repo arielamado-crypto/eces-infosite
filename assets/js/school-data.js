@@ -1,5 +1,5 @@
 /* ECES SCHOOL DATA — used by the School Data page and home page numbers.
-   Edited with the Site Editor (admin.html) on Oct 29, 2026, 4:08 PM.
+   Edited with the Site Editor (admin.html) on Oct 29, 2026, 4:25 PM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES_DATA = {
   "isSample": true,
@@ -82,11 +82,11 @@ window.ECES_DATA = {
     },
     {
       "position": "Master Teacher II",
-      "count": 2
+      "count": 4
     },
     {
       "position": "Master Teacher I",
-      "count": 4
+      "count": 12
     },
     {
       "position": "Teacher III",
