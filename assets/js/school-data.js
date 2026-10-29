@@ -1,5 +1,5 @@
 /* ECES SCHOOL DATA — used by the School Data page and home page numbers.
-   Edited with the Site Editor (admin.html) on Oct 29, 2026, 3:53 PM.
+   Edited with the Site Editor (admin.html) on Oct 29, 2026, 4:08 PM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES_DATA = {
   "isSample": true,
@@ -14,38 +14,43 @@ window.ECES_DATA = {
   "enrollment": [
     {
       "grade": "Kinder",
-      "male": 82,
-      "female": 76
+      "male": 143,
+      "female": 134
     },
     {
       "grade": "Grade 1",
-      "male": 88,
-      "female": 84
+      "male": 153,
+      "female": 164
     },
     {
       "grade": "Grade 2",
-      "male": 90,
-      "female": 86
+      "male": 129,
+      "female": 134
     },
     {
       "grade": "Grade 3",
-      "male": 85,
-      "female": 89
+      "male": 153,
+      "female": 173
     },
     {
       "grade": "Grade 4",
-      "male": 80,
-      "female": 83
+      "male": 152,
+      "female": 149
     },
     {
       "grade": "Grade 5",
-      "male": 78,
-      "female": 81
+      "male": 178,
+      "female": 185
     },
     {
       "grade": "Grade 6",
-      "male": 74,
-      "female": 79
+      "male": 208,
+      "female": 196
+    },
+    {
+      "grade": "Non Graded",
+      "male": 28,
+      "female": 16
     }
   ],
   "enrollmentTrend": [
