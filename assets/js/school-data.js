@@ -1,8 +1,8 @@
 /* ECES SCHOOL DATA — used by the School Data page and home page numbers.
-   Edited with the Site Editor (admin.html) on Nov 6, 2026, 9:12 AM.
+   Edited with the Site Editor (admin.html) on Nov 6, 2026, 9:43 AM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES_DATA = {
-  "isSample": false,
+  "isSample": true,
   "schoolYear": "2025–2026",
   "asOf": "October 2026",
   "source": "School records / LIS / BEIS",
