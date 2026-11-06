@@ -1,5 +1,5 @@
 /* ECES INFOSITE — SITE SETTINGS
-   Edited with the Site Editor (admin.html) on Oct 29, 2026, 4:34 PM.
+   Edited with the Site Editor (admin.html) on Nov 6, 2026, 9:11 AM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES = {
   "schoolName": "Estancia Central Elementary School",
@@ -15,7 +15,7 @@ window.ECES = {
   "facebook": "https://www.facebook.com/EstanciaCES116349",
   "officeHours": "Monday to Friday, 7:30 AM – 5:00 PM",
   "ssesSite": "https://arielamado-crypto.github.io/sses-infosite/",
-  "showWelcome": true,
+  "showWelcome": false,
   "announcements": [
     {
       "date": "2026-11-03",
