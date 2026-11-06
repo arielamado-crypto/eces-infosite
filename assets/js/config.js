@@ -14,7 +14,7 @@ window.ECES = {
   "email": "116349@deped.gov.ph",
   "facebook": "https://www.facebook.com/EstanciaCES116349",
   "officeHours": "Monday to Friday, 7:30 AM – 5:00 PM",
-  "ssesSite": "https://arielamado-crypto.github.io/sses-infosite/",
+  "ssesSite": "https://sses-infosite.pages.dev/",
   "showWelcome": false,
   "announcements": [
     {
