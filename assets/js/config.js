@@ -1,5 +1,5 @@
 /* ECES INFOSITE — SITE SETTINGS
-   Edited with the Site Editor (admin.html) on Nov 6, 2026, 9:11 AM.
+   Edited with the Site Editor (admin.html) on Nov 6, 2026, 9:12 AM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES = {
   "schoolName": "Estancia Central Elementary School",
