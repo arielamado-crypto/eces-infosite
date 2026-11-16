@@ -1,5 +1,5 @@
 /* ECES INFOSITE — SITE SETTINGS
-   Edited with the Site Editor (admin.html) on Nov 6, 2026, 10:05 AM.
+   Edited with the Site Editor (admin.html) on Nov 16, 2026, 1:25 PM.
    Tip: use the Site Editor instead of changing this file by hand. */
 window.ECES = {
   "schoolName": "Estancia Central Elementary School",
@@ -41,5 +41,6 @@ window.ECES = {
       "title": "ECES Learners Shine in District Meet",
       "text": "Congratulations to our learners and coaches for bringing home medals in academic and sports events."
     }
-  ]
+  ],
+  "driveApi": "https://script.google.com/macros/s/AKfycbyVDRZFTrRUNqkTpGZQE8LhAM3W9u27WUlT_7voWC5ytGNZDddjsM7Ao0A7VDM7SSFttQ/exec"
 };
