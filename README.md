@@ -41,3 +41,4 @@ Packets and learners' activity photos are stored in Google Drive using the ECES 
 4. After 1–2 minutes the site is live at `https://<your-username>.github.io/eces-infosite/`.
 
 Developer: Sir Ariel L. Amado, Master Teacher I
+Updated November 16.
