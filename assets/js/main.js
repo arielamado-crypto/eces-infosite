@@ -35,7 +35,7 @@
       <nav class="nav" id="nav"><div class="wrap">
         <a class="brand" href="index.html">
           <img src="assets/img/eces-logo.png" alt="ECES logo">
-          <span><b>${C.schoolName}</b><small>${C.tagline} · ${C.district}</small></span>
+          <span><b class="b-long">${C.schoolName}</b><b class="b-short">${C.shortName || "ECES"}</b><small>${C.tagline} · ${C.district}</small></span>
         </a>
         <ul class="menu">${PAGES.map(p => `<li><a href="${p[1]}" class="${p[0] === page ? "active" : ""}">${p[2]}</a></li>`).join("")}${C.ssesSite ? `<li><a class="ext" href="${C.ssesSite}" target="_blank" rel="noopener">SSES Site ↗</a></li>` : ""}</ul>
         <button class="burger" aria-label="Open menu"><span></span></button>
