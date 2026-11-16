@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Learning Packets | Estancia Central Elementary School</title>
+<title>E-Library: Learning Packets | Estancia Central Elementary School</title>
 <meta name="description" content="View and download learning packets for Kinder to Grade 6 learners of Estancia Central Elementary School.">
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,17 @@
 <main>
   <section class="page-hero"><div class="wrap">
     <div class="crumbs"><a href="index.html">Home</a> / Learning Packets</div>
-    <span class="eyebrow">Learner Corner</span>
-    <h1>Learning Packets</h1>
-    <p>View and download your learning packets by grade level, anytime and anywhere.</p>
+    <span class="eyebrow">ECES E-Library</span>
+    <h1>Learning Packets Library</h1>
+    <p>Pick a book from your grade's shelf and read it like a real book — on a phone, tablet or computer.</p>
   </div></section>
 
   <section class="section" style="padding-top:44px"><div class="wrap">
+    <div class="lib-badge reveal" id="lib-badge"></div>
     <div class="pk-top">
-      <div><h2 class="pk-title">Choose your grade level</h2><p class="pk-sub">Tap <b>View</b> to read online, or <b>Download</b> to save it on your phone or computer. <span id="pk-updated"></span></p></div>
+      <div><h2 class="pk-title">Choose your grade</h2><p class="pk-sub">Tap a book to open it. Turn the pages with the arrows or swipe. <span id="pk-updated"></span></p></div>
       <div class="pk-tools">
-        <label class="pk-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pk-search" type="search" placeholder="Search subject, week, title…" aria-label="Search packets"></label>
+        <label class="pk-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="pk-search" type="search" placeholder="Search a book…" aria-label="Search books"></label>
         <button class="pk-refresh" id="pk-refresh" type="button" title="Refresh list" aria-label="Refresh list">⟳</button>
       </div>
     </div>
@@ -35,6 +36,7 @@
 </main>
 <div id="site-footer"></div>
 <script>/* always load the newest settings */(function(v){document.write('<script src="assets/js/config.js?v='+v+'"><\/script>');})(Date.now());</script>
+<script src="assets/js/library.js"></script>
 <script src="assets/js/packets.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

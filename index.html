@@ -93,14 +93,25 @@
     <div class="wrap lc-home two">
       <div class="lc-home-intro reveal">
         <span class="eyebrow">Learner Corner</span>
-        <h2>Learn anywhere, anytime.</h2>
+        <h2>Read anywhere, anytime.</h2>
         <p>Your learning packets are online — open them on a phone, tablet or computer and download them for later.</p>
       </div>
       <a class="lc-card gold reveal" href="packets.html">
-        <span class="big">📚</span><h3>Learning Packets</h3><p>View and download packets for Kinder to Grade 6, organized by grade level.</p>
-        <span class="go">Open packets <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="big">📚</span><h3>ECES E-Library</h3><p>Learning packets on bookshelves for Kinder to Grade 6 — open a book and turn the pages.</p>
+        <span class="go">Open the library <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
 
+    </div>
+  </section>
+
+  <!-- NEW IN THE LIBRARY -->
+  <section class="section home-shelf" id="home-shelf" hidden style="padding-bottom:0">
+    <div class="wrap">
+      <div class="home-shelf-head reveal">
+        <div><span class="eyebrow">New in the E-Library</span><h2>Pick a book and start reading!</h2></div>
+        <a class="btn green" href="packets.html">See all books <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="shelf"><div class="shelf-books" id="home-books"></div></div>
     </div>
   </section>
 
@@ -165,6 +176,8 @@
 
 <div id="site-footer"></div>
 <script>/* always load the newest settings */(function(v){document.write('<script src="assets/js/config.js?v='+v+'"><\/script>');document.write('<script src="assets/js/school-data.js?v='+v+'"><\/script>');})(Date.now());</script>
+<script src="assets/js/library.js"></script>
+<script src="assets/js/library-home.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

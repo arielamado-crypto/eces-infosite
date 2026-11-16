@@ -7,7 +7,7 @@ Static website for learners, parents and stakeholders. Runs free on GitHub Pages
 - `about.html` — Story, DepEd Vision/Mission/Core Values, why ECES
 - `academics.html` — Kinder to Grade 6, programs
 - `data.html` — School Data: enrollment, personnel, performance indicators and reading profile with graphs
-- `packets.html` — Learning Packets by grade (view / download), from Google Drive
+- `packets.html` — ECES E-Library: learning packets on bookshelves by grade; PDFs open as page-flip books, E-Book Maker HTML files open as e-books (from Google Drive)
 - `submit.html` — Learners take/choose photos of activities and send them to teachers (Google Drive, by Grade › Section)
 - `news.html` — All announcements
 - `admin.html` — Site Editor (forms for all settings and data)
@@ -41,4 +41,3 @@ Packets and learners' activity photos are stored in Google Drive using the ECES 
 4. After 1–2 minutes the site is live at `https://<your-username>.github.io/eces-infosite/`.
 
 Developer: Sir Ariel L. Amado, Master Teacher I
-Updated November 16.
