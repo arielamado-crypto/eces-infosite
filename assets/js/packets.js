@@ -35,7 +35,7 @@
 
   function load(refresh) {
     drawBadge();
-    if (!api) { tabs.innerHTML = ""; message("📚", "Our e-library is coming soon", "Our teachers are preparing the learning packets. Please check again later."); return; }
+    if (!api) { tabs.innerHTML = ""; message("📚", "E-Learning Packets are coming soon", "Our teachers are preparing the learning packets. Please check again later."); return; }
     box.innerHTML = `<div class="lib-skel">${'<div class="lib-skel-book"></div>'.repeat(6)}</div>`;
     fetch(api + (api.includes("?") ? "&" : "?") + "action=packets" + (refresh ? "&refresh=1" : ""))
       .then((r) => r.json())

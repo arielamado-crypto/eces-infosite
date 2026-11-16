@@ -7,7 +7,7 @@
     ["home", "index.html", "Home"],
     ["about", "about.html", "About"],
     ["academics", "academics.html", "Academics"],
-    ["packets", "packets.html", "E-Library"],
+    ["packets", "packets.html", "E-Learning Packets"],
     ["data", "data.html", "School Data"],
     ["news", "news.html", "News"],
     ["enrollment", "enrollment.html", "Enrollment"],
