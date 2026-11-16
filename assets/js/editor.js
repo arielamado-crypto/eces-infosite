@@ -93,6 +93,21 @@
       { key: "text", label: "Details", type: "area" }
     ], { addTop: true });
 
+    /* ----- Packets & Uploads ----- */
+    if (C.driveApi == null) C.driveApi = "";
+    const apiIn = $("#lc-api"); apiIn.value = C.driveApi;
+    apiIn.addEventListener("input", () => { C.driveApi = apiIn.value.trim(); markDirty(); });
+    $("#lc-test").addEventListener("click", () => {
+      const out = $("#lc-test-msg"), url = apiIn.value.trim();
+      if (!/^https:\/\/script\.google(usercontent)?\.com\//.test(url)) { out.className = "ed-msg err"; out.textContent = "✗ Paste the Web app link that starts with https://script.google.com/"; return; }
+      out.className = "ed-msg"; out.textContent = "Testing…";
+      fetch(url + (url.includes("?") ? "&" : "?") + "action=packets&refresh=1").then(r => r.json()).then(d => {
+        if (!d.ok) throw new Error(d.error || "error");
+        const n = (d.grades || []).reduce((t, g) => t + (function c(x) { return (x.files || []).length + (x.folders || []).reduce((a, f) => a + c(f), 0); })(g), 0);
+        out.className = "ed-msg ok"; out.textContent = `✓ Connected! ${(d.grades || []).length} grade folders, ${n} packet file${n === 1 ? "" : "s"} found. Click Save to apply.`;
+      }).catch(e => { out.className = "ed-msg err"; out.textContent = "✗ Could not connect. Check that the link ends with /exec and the deployment is set to \"Anyone\". (" + e.message + ")"; });
+    });
+
     const g = $("#p-general");
     D.profile = D.profile || {};
     g.innerHTML = `${fields(D, [["isSample", "Show the yellow \"Sample data\" notice (untick once the real figures are entered)", "check"]])}

@@ -30,6 +30,7 @@
   <nav class="ed-tabs" aria-label="Editor sections">
     <button class="ed-tab on" data-tab="t-info">🏫 School Info</button>
     <button class="ed-tab" data-tab="t-news">📢 Announcements</button>
+    <button class="ed-tab" data-tab="t-lc">📚 Learning Packets</button>
     <button class="ed-tab" data-tab="t-general">📋 Data Settings</button>
     <button class="ed-tab" data-tab="t-enroll">👧 Enrollment</button>
     <button class="ed-tab" data-tab="t-trend">📈 Enrollment Trend</button>
@@ -46,6 +47,33 @@
     <section class="ed-panel card" id="t-news" hidden>
       <h2>Announcements</h2><p class="ed-help">Newest items appear first. Click <b>+ Add row</b> for a new announcement; the home page shows the latest 4.</p>
       <div id="p-news"></div>
+    </section>
+    <section class="ed-panel card" id="t-lc" hidden>
+      <h2>Learning Packets</h2>
+      <p class="ed-help">Learning packets are kept in your Google Drive. Do the one-time setup below, then paste the link here.</p>
+
+      <h4 class="ed-sub">1 · Google Drive connection</h4>
+      <label class="ed-field"><span>Google script Web app link</span><input id="lc-api" type="url" placeholder="https://script.google.com/macros/s/…/exec"><small>Leave empty to show "coming soon" on the Learning Packets page.</small></label>
+      <div class="lc-test"><button class="btn sm green" id="lc-test" type="button">Test connection</button><span class="ed-msg" id="lc-test-msg"></span></div>
+
+      <details class="ed-details lc-guide"><summary>One-time setup guide (about 10 minutes)</summary>
+        <ol>
+          <li>Sign in to the Google account that will keep the files. <b>A school Gmail account is recommended</b> (DepEd accounts may block public links).</li>
+          <li>Open <a href="https://script.google.com/home/projects/create" target="_blank" rel="noopener">script.google.com → New project</a>. Name it <b>ECES Learner Corner</b>.</li>
+          <li>Delete the sample code, then paste the whole <b>ECES Google Drive Script</b> file (it is already set to <code>SCHOOL = "ECES"</code>, packets only). Click 💾 <b>Save</b>.</li>
+          <li>In the top bar choose the function <b>setup</b> and click <b>▶ Run</b>. Click <b>Review permissions</b> → choose the account → <b>Advanced</b> → <b>Go to ECES Learner Corner</b> → <b>Allow</b>.</li>
+          <li>Click <b>Deploy → New deployment</b> → ⚙️ <b>Web app</b>. Set <b>Execute as: Me</b> and <b>Who has access: Anyone</b> → <b>Deploy</b>.</li>
+          <li>Copy the <b>Web app URL</b> (ends with <code>/exec</code>), paste it above, click <b>Test connection</b>, then <b>Save</b>.</li>
+        </ol>
+        <p>Setup creates the folder <b>ECES Learning Packets</b> in your Google Drive, with a folder for each grade — put the packets there.</p>
+      </details>
+
+      <h4 class="ed-sub">How teachers use it</h4>
+      <ul class="lc-how">
+        <li><b>Add packets:</b> upload PDF/Word files (or e-books) into <i>ECES Learning Packets › Grade</i> in Google Drive. You may make subfolders like <i>Quarter 2</i> or <i>Mathematics</i>. They appear on the website within 5 minutes.</li>
+        <li><b>Remove a packet:</b> delete it from the Drive folder.</li>
+        <li><b>Other teachers can add packets</b> if you share the <i>ECES Learning Packets</i> folder with them as <b>Editor</b> in Google Drive.</li>
+      </ul>
     </section>
     <section class="ed-panel card" id="t-general" hidden>
       <h2>Data Settings</h2><p class="ed-help">School year and source shown on the School Data page.</p>

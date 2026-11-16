@@ -7,6 +7,8 @@ Static website for learners, parents and stakeholders. Runs free on GitHub Pages
 - `about.html` — Story, DepEd Vision/Mission/Core Values, why ECES
 - `academics.html` — Kinder to Grade 6, programs
 - `data.html` — School Data: enrollment, personnel, performance indicators and reading profile with graphs
+- `packets.html` — Learning Packets by grade (view / download), from Google Drive
+- `submit.html` — Learners take/choose photos of activities and send them to teachers (Google Drive, by Grade › Section)
 - `news.html` — All announcements
 - `admin.html` — Site Editor (forms for all settings and data)
 - `enrollment.html` — Steps and requirements
@@ -25,6 +27,12 @@ When done, either:
 Anyone can open the editor page, but only someone with your GitHub token (or your GitHub login) can change the live site.
 
 To change the principal photo or logo, upload a new image to `assets/img` with the **same file name** (`principal.jpg` or `eces-logo.png`).
+
+## Learner Corner (Google Drive)
+Packets and learners' activity photos are stored in Google Drive using the ECES Google Drive Script
+(kept outside this repository). Setup steps are in the Site Editor → **Packets & Uploads** tab.
+- Packets: put files in Drive → *ECES Learning Packets › Grade* (subfolders allowed). They show on the site within 5 minutes.
+- Activities: saved privately in *ECES Learner Activities › Grade › Section*, listed in the *ECES Activity Submissions* sheet. Only teachers see them.
 
 ## Put it online (GitHub Pages)
 1. Sign in to GitHub → **New repository** → name it `eces-infosite` → Public → Create.
